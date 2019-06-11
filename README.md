@@ -5,8 +5,7 @@ It's a goLang based application is getting build in a Docker image, using Docker
 # Prerequisites 
 You need to install docker and GIT software to your laptop/desktop/VM.
 
-Docker
-GIT
+Docker & GIT
 
 # Clone the repository
 
