@@ -29,11 +29,11 @@ CONTAINER ID        IMAGE               COMMAND              CREATED            
 
 # Verify application locally by using CURL
 
-[root@ip-172-31-47-190 AppTest1]#  curl http://127.0.0.1:8000/
+[root@ip-172-31-47-190 AppTest1]#  curl http://127.0.0.1:8000/ ======= OUTPUT ======>
 Hello, world.
 
-[root@ip-172-31-47-190 AppTest1]#  curl http://127.0.0.1:8000/go
+[root@ip-172-31-47-190 AppTest1]#  curl http://127.0.0.1:8000/go ======= OUTPUT ======>
 Don't communicate by sharing memory, share memory by communicating.
 
-[root@ip-172-31-47-190 AppTest1]# curl http://localhost:8000/opt
+[root@ip-172-31-47-190 AppTest1]# curl http://localhost:8000/opt ======= OUTPUT ======>
 Don't communicate by sharing memory, share memory by communicating.
