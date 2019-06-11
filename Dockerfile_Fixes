@@ -1,0 +1,19 @@
+FROM golang:alpine
+
+ENV GO111MODULE=on
+
+WORKDIR /app
+
+ADD ./ /app
+
+RUN apk update --no-cache
+
+# Adding gcc and musl-dev libs to fix Docker file issue
+
+RUN apk add git gcc musl-dev
+
+RUN go build -o golang-test  .
+
+ENTRYPOINT ["/app/golang-test"]
+
+EXPOSE 8000
